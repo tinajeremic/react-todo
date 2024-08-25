@@ -12,10 +12,15 @@ function App() {
     'Go to the gym',    
     'Make a reservation'
   ]);
+
+  function handleAddTodos(newTodo) {
+    const newToDoList = [...todos, newTodo];
+    setTodos(newToDoList);
+  }
   
   return (
     <>
-      <ToDoInput />
+      <ToDoInput handleAddTodos={handleAddTodos}/>
       <ToDoList todos={todos}/>      
     </>
   )
