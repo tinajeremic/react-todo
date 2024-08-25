@@ -9,7 +9,7 @@ export default function ToDoList(props) {
     <ul className='main'>
       {todos.map((todo, toDoIndex) => {
         return (
-          <ToDoCard key={toDoIndex}>
+          <ToDoCard {...props} key={toDoIndex} index={toDoIndex}>
             <p>{todo}</p>
           </ToDoCard>
         )
