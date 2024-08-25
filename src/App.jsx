@@ -7,11 +7,7 @@ import ToDoList from "./components/ToDoList"
 //root from main.jsx is then in index.html
 function App() {
 
-  const [todos, setTodos] = useState([
-    'Go to uni',
-    'Go to the gym',    
-    'Make a reservation'
-  ]);
+  const [todos, setTodos] = useState([]);
 
   function handleAddTodos(newTodo) {
     const newToDoList = [...todos, newTodo];
